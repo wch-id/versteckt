@@ -4,7 +4,7 @@ terraform {
     organization = "wch-id"
 
     workspaces {
-      name = "ws-cloudflare"
+      name = "workspace-cloudflare""
     }
   }
   required_providers {
