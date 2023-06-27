@@ -89,7 +89,7 @@ resource "cloudflare_record" "terraform_managed_resource_dbbc4930417c98a66a37ad6
 }
 
 resource "cloudflare_record" "terraform_managed_resource_testing_pr" {
-  name    = "testing-pr2"
+  name    = "testing-pr3"
   proxied = false
   ttl     = 1
   type    = "A"
