@@ -96,3 +96,12 @@ resource "cloudflare_record" "terraform_managed_resource_testing_pr" {
   value   = "1.4.5.4"
   zone_id = "276ca4158d4acf658b7f679805e747fb"
 }
+
+resource "cloudflare_record" "terraform_managed_resource_testing_pr_bewok" {
+  name    = "testing-pr-bewok"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  value   = "1.4.5.5"
+  zone_id = "276ca4158d4acf658b7f679805e747fb"
+}
