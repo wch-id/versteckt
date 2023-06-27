@@ -70,3 +70,11 @@ resource "cloudflare_record" "terraform_managed_resource_dbbc4930417c98a66a37ad6
   zone_id = "276ca4158d4acf658b7f679805e747fb"
 }
 
+resource "cloudflare_record" "terraform_managed_resource_dbbc4930417c98a66a37ad69253c7fc6" {
+  name    = "hello"
+  proxied = false
+  ttl     = 1
+  type    = "CNAME"
+  value   = "wch-id.github.io"
+  zone_id = "276ca4158d4acf658b7f679805e747fb"
+}
