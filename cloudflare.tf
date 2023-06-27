@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+    hostname = "app.terraform.io"
+    organization = "wch-id"
+
+    workspaces {
+      name = "ws-cloudflare"
+    }
+  }
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
