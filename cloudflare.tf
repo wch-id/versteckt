@@ -6,7 +6,6 @@ terraform {
       name = "workspace-cloudflare"
     }
   }
-}
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
