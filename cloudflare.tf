@@ -87,3 +87,12 @@ resource "cloudflare_record" "terraform_managed_resource_dbbc4930417c98a66a37ad6
   value   = "1.4.5.4"
   zone_id = "276ca4158d4acf658b7f679805e747fb"
 }
+
+resource "cloudflare_record" "terraform_managed_resource_dbbc4930417c98a66a37ad68253c7fc6" {
+  name    = "testing-pr"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  value   = "1.4.5.4"
+  zone_id = "276ca4158d4acf658b7f679805e747fb"
+}
